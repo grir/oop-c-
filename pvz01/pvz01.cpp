@@ -33,7 +33,7 @@ void sumaIrSandauga(const int a, const int b, const int c, int& suma, int& sanda
 int main(){
     int a,b,c;
     int san, sum;
-    std::cin << a << b << c << std::endl;
+    std::cin >> a >> b >> c;
     std::cout << "suma(" << a << "," << b << "," << c << ")="<<suma(a,b,c) << std::endl; 
     std::cout << "didziausioIrMaziausioSandauga(" << a << "," << b << "," << c << ")="<<didziausioIrMaziausioSandauga(a,b,c) << std::endl; 
     std::cout << "didziausioIrMaziausioSandauga(" << a << "," << b << ")="<<didziausioIrMaziausioSandauga(a,b) << std::endl; 
