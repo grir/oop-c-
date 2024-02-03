@@ -9,13 +9,13 @@ int suma(const int a, const int b, const int c){
 
 // Dar viena paprasta funkcija. Turime numatytuousius parametrus.
 int didziausioIrMaziausioSandauga(const int a=0, const int b=0, const int c=0){
-  int mx = a;
-  int mn = a;
-  if (b > mx) mx = b;
-  if (b < mn) mn = b;
-  if (c > mx) mx = c;
-  if (c < mn) mn = c;
-  return mx * mn;
+      int mx = a;
+      int mn = a;
+      if (b > mx) mx = b;
+      if (b < mn) mn = b;
+      if (c > mx) mx = c;
+      if (c < mn) mn = c;
+      return mx * mn;
 }
 
 // Paprasta funkcija su rodyklėmis 
@@ -31,8 +31,14 @@ void sumaIrSandauga(const int a, const int b, const int c, const int& suma, cons
 }
 
 int main(){
-  
-
-
+    int a,b,c;
+    int san, sum;
+    std::cin << a << b << c << std::endl;
+    std::cout << "suma(" << a << "," << b << "," << c << ")="<<suma(a,b,c) << std::endl; 
+    std::cout << "didziausioIrMaziausioSandauga(" << a << "," << b << "," << c << ")="<<didziausioIrMaziausioSandauga(a,b,c) << std::endl; 
+    std::cout << "didziausioIrMaziausioSandauga(" << a << "," << b << ")="<<didziausioIrMaziausioSandauga(a,b) << std::endl; 
+    sumaIrSandauga(a,b,c,&san, &sum);
+    std::cout << "Kviečiame didziausioIrMaziausioSandauga(" << a << "," << b << ")="<<didziausioIrMaziausioSandauga(a,b) << std::endl; 
+    
     
 }
