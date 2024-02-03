@@ -17,3 +17,22 @@ int didziausioIrMaziausioSandauga(const int a=0, const int b=0, const int c=0){
   if (c < mn) mn = c;
   return mx * mn;
 }
+
+// Paprasta funkcija su rodyklėmis 
+void sumaIrSandauga(const int a, const int b, const int c, const int* suma, const int* sandauga){
+    *suma = a+b+c;
+    *sandauga = a*b*c;
+}
+
+// Paprasta funkcija su nuorodomis/sinonimais 
+void sumaIrSandauga(const int a, const int b, const int c, const int& suma, const int& sandauga){
+    suma = a+b+c;
+    sandauga = a*b*c;
+}
+
+int main(){
+  
+
+
+    
+}
