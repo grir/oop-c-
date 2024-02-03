@@ -40,5 +40,6 @@ int main(){
     sumaIrSandauga(a,b,c,&sum, &san);
     std::cout << "Kviečiame sumaIrSandauga(a,b,c,&san, &sum), gavome san=" << san << ", sum=" << sum << std::endl; 
     
+    return 0;
     
 }
