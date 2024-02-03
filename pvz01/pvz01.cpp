@@ -25,7 +25,7 @@ void sumaIrSandauga(const int a, const int b, const int c, int* const suma, int*
 }
 
 // Paprasta funkcija su nuorodomis/sinonimais 
-void sumaIrSandauga(const int a, const int b, const int c, const int& suma, const int& sandauga){
+void sumaIrSandauga(const int a, const int b, const int c, int& suma, int& sandauga){
     suma = a+b+c;
     sandauga = a*b*c;
 }
