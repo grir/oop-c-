@@ -19,7 +19,7 @@ int didziausioIrMaziausioSandauga(const int a=0, const int b=0, const int c=0){
 }
 
 // Paprasta funkcija su rodyklėmis 
-void sumaIrSandauga(const int a, const int b, const int c, const int* suma, const int* sandauga){
+void sumaIrSandauga(const int a, const int b, const int c, int* const suma, int* const sandauga){
     *suma = a+b+c;
     *sandauga = a*b*c;
 }
@@ -37,8 +37,8 @@ int main(){
     std::cout << "suma(" << a << "," << b << "," << c << ")="<<suma(a,b,c) << std::endl; 
     std::cout << "didziausioIrMaziausioSandauga(" << a << "," << b << "," << c << ")="<<didziausioIrMaziausioSandauga(a,b,c) << std::endl; 
     std::cout << "didziausioIrMaziausioSandauga(" << a << "," << b << ")="<<didziausioIrMaziausioSandauga(a,b) << std::endl; 
-    sumaIrSandauga(a,b,c,&san, &sum);
-    std::cout << "Kviečiame didziausioIrMaziausioSandauga(" << a << "," << b << ")="<<didziausioIrMaziausioSandauga(a,b) << std::endl; 
+    sumaIrSandauga(a,b,c,&sum, &san);
+    std::cout << "Kviečiame sumaIrSandauga(a,b,c,&san, &sum), gavome san=" << san << ", sum=" << sum << std::endl; 
     
     
 }
